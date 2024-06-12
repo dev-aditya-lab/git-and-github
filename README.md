@@ -39,20 +39,78 @@ manages projects with repositories, which are like secret hideouts for your code
 GitHub isn't Git, but it's like its trusty sidekick. It takes Git to the next level with a whole suite of tools and features. Owned by the mighty Microsoft, GitHub is the ultimate hub for all things code, hosting millions of repositories from developers worldwide.
 
 So, there you have it! Get ready to dive into the exciting world of Git and GitHub, where coding dreams become reality.
-## Git Install
+## What is Repository.
+In the world of programming and software development, a repository is an essential tool that serves as a central location for storing and managing code. It not only houses the source code but also tracks changes, manages versions, and facilitates collaboration among developers. Let's delve into the intricacies of what a repository is and why it's indispensable in modern software development.
 
-You can download Git for free from the following website: [https://www.git-scm.com/](https://www.git-scm.com/)
-## Check your git version
 
-To check your git version, you can run the following command:
+# Git Install in Your System
 
+Setting up Git in your system for use with Visual Studio Code is essential for efficient version control and collaboration. Here's a straightforward guide to help you get started.
+
+### Step-by-Step Instructions
+
+1. Install Git
+- **Windows** : Download and install from Git for [Windows](https://www.git-scm.com/).
+- **Mac** : Use Homebrew with brew install git or download from Git for [Mac](https://git-scm.com/download/mac).
+- **Linux** : Install via package manager, e.g., `sudo apt-get install git` for Debian-based distributions.
+
+2. Verify Git Installation
+Open your terminal or command prompt and run:
 ```cmd
   git --version
 ```
-
+You should see the installed Git version.
 This command will display the version of git installed on your system. Git is a very stable software and don’t get any breaking changes in majority of the cases, at least in my experience.
-## What is Repository.
-In the world of programming and software development, a repository is an essential tool that serves as a central location for storing and managing code. It not only houses the source code but also tracks changes, manages versions, and facilitates collaboration among developers. Let's delve into the intricacies of what a repository is and why it's indispensable in modern software development.
+
+3. Configure Git
+Set up your username and email:
+```cmd
+  git config --global user.name "Your Name"
+  git config --global user.email "your.email@example.com"
+```
+Check your configuration with:
+
+```cmd
+  git config --list
+```
+4. Install Visual Studio Code
+Download and install from [Visual Studio Code](https://code.visualstudio.com/).
+
+5. Install Git Extension in VS Code
+Open VS Code.
+Go to the Extensions view by clicking the Extensions icon in the Activity Bar on the side of the window.
+Search for "GitLens" and install it for enhanced Git capabilities.
+#  Initialize folder into Git Repository.
+- Create a folder and open in vs code.
+- Open the terminal in VS Code.
+- Initialize a new Git repository:
+```cmd
+  git init
+```
+- check status of the foldres an files.
+
+```cmd
+  git status 
+```
+
+## Commit
+
+
+commit is a way to save your changes to your repository. It is a way to record your changes and make them permanent. You can think of a commit as a snapshot of your code at a particular point in time. When you commit your changes, you are telling git to save them in a permanent way. This way, you can always go back to that point in time and see what you changed.
+
+![logo](https://app.eraser.io/workspace/SMlHs99FVb8wFX7uXTLP/preview?elements=PBx4CuCnDKSV09sU8nNxVw&type=embed)
+
+- write code, then
+
+- . Add you file
+    ```cmd
+      git add <FILE_NAME> <FILE_NAME> <FILE_NAME>
+    ```
+    - If you want to all the file :
+    
+    ```cmd
+      git add .
+    ```
 ## Support
 
 For support, email fake@fake.com or join our Slack channel.
@@ -75,12 +133,12 @@ To run this project, you will need to add the following environment variables to
 - Cross platform
 
 
+![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+
+
 ## Demo
 
 Insert gif or link to demo
-
-
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
 
 ## Usage/Examples
