@@ -80,6 +80,12 @@ Download and install from [Visual Studio Code](https://code.visualstudio.com/).
 Open VS Code.
 Go to the Extensions view by clicking the Extensions icon in the Activity Bar on the side of the window.
 Search for "GitLens" and install it for enhanced Git capabilities.
+
+- #### change default code editor
+You can change the default code editor in your system to vscode. To do this, you can use the following command:
+```cmd
+  git config --global core.editor "code --wait"
+```
 #  Initialize folder into Git Repository.
 - Create a folder and open in vs code.
 - Open the terminal in VS Code.
@@ -98,11 +104,13 @@ Search for "GitLens" and install it for enhanced Git capabilities.
 
 commit is a way to save your changes to your repository. It is a way to record your changes and make them permanent. You can think of a commit as a snapshot of your code at a particular point in time. When you commit your changes, you are telling git to save them in a permanent way. This way, you can always go back to that point in time and see what you changed.
 
+## Steps of commit
+
 ![logo](https://app.eraser.io/workspace/SMlHs99FVb8wFX7uXTLP/preview?elements=PBx4CuCnDKSV09sU8nNxVw&type=embed)
 
-- write code, then
+1. write code
 
-- . Add you file
+2. . Add your file
     ```cmd
       git add <FILE_NAME> <FILE_NAME> <FILE_NAME>
     ```
@@ -111,50 +119,79 @@ commit is a way to save your changes to your repository. It is a way to record y
     ```cmd
       git add .
     ```
-## Support
+3. commit
+```cmd
+  git commit -m "commit message"
+  ```
+  - Here we are committing the changes to the repository. We can see that the changes are now committed to the repository. The `-m` flag is used to add a message to the commit. This message is a short description of the changes that were made. You can use this message to remember what the changes were.
 
-For support, email fake@fake.com or join our Slack channel.
+4. check status (optional)
 
+```cmd
+  git status
+  ```
+## Logs
+The git log command is a powerful tool in Git that allows you to view the history of your repository. When used with the --oneline option, it presents this history in a simplified, condensed format. Here's a quick guide to help you understand and use these commands effectively.
 
-## Environment Variables
+#### What is git log?
+git log displays the commit history of your repository. By default, it shows detailed information about each commit, including:
 
-To run this project, you will need to add the following environment variables to your .env file
+- Commit hash
+- Author
+- Date
+- Commit message
+#### Key Points About git log
+- **Comprehensive History** : See all commits, from the most recent to the earliest.
+- **Details** : Includes author, date, and the commit message for each commit.
+- **Customizable** : Can be tailored with various options to show different levels of detail or specific information.
 
-`API_KEY`
-
-`ANOTHER_API_KEY`
-
-
-## Features
-
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
-
-
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
-
-## Demo
-
-Insert gif or link to demo
-
-
-## Usage/Examples
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
+Example Usage :
+```cmd
+  git log
 ```
+#### Simplifying with `--oneline`
 
+Adding the `--oneline` option to git log condenses the output, showing each commit in a single line. This format includes:
 
-## Related
+- **Abbreviated Commit Hash** : Shorter version of the full commit hash.
+- **Commit Message** : The first line of the commit message.
 
-Here are some related projects
+#### Key Points About `--oneline`
+**Compact View** : Easier to scan through the commit history quickly.
+** Abbreviated Hashes** : Shortened commit hashes for simplicity.
+** Ideal for Summarizing** : Useful when you need a quick overview.
 
-[Awesome README](https://github.com/matiassingers/awesome-readme)
+Example Usage :
+```cmd
+    git log --oneline
+```
+# .gitignore
 
+The `.gitignore` file is a crucial component for managing Git repositories. It helps developers control which files and directories should be ignored by Git, preventing them from being tracked and versioned. This is particularly useful for keeping your repository clean and focused on the necessary files.
+
+#### Key Points
+- **Purpose** : `.gitignore` tells Git which files or directories to ignore, ensuring they are not committed to the repository.
+- **Common Uses** : Ignoring build files, temporary files, configuration files, and dependencies that are not needed in the version control system.
+
+### How to Create and Use a .gitignore File
+
+#### Step-by-Step Guide
+1. Create the .gitignore File
+  -  In your project root directory, create a new file named `.gitignore`.
+
+2. Add Patterns to .gitignore
+
+- Each line in the `.gitignore` file represents a pattern for files/directories to ignore.
+
+Example :
+``` 
+    # Ignore node_modules directory
+    node_modules/
+
+    # Ignore all .log files
+    *.log
+
+    # Ignore specific file
+    secret.txt
+
+```
