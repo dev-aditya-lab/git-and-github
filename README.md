@@ -57,7 +57,6 @@
 
 # This documentation provides comprehensive guidelines for using GTI (Git Tool Interface) and GitHub, covering key functionalities, setup processes, and best practices.
 
-
 Let’s start with the basics. Git is a version control system that allows you to track changes to your files and collaborate with others. It is used to manage the history of your code and to merge changes from different branches. I can understand that as of now these terms like version control, branches, and merges are not familiar to you. But don’t worry, we will learn them in this tutorial.
 
 # What is Git
@@ -163,7 +162,7 @@ commit is a way to save your changes to your repository. It is a way to record y
 
 ## Steps of commit
 
-![logo](https://app.eraser.io/workspace/SMlHs99FVb8wFX7uXTLP/preview?elements=PBx4CuCnDKSV09sU8nNxVw&type=embed)
+![logo](https://app.eraser.io/workspace/SMlHs99FVb8wFX7uXTLP/preview?elements=G3bLrxG4Y6w982IICMCxDg&type=embed)
 
 1. write code
 
