@@ -278,3 +278,52 @@ Project Structure: Sometimes, you need to maintain a specific directory structur
 - **Consistency** : Use .gitkeep consistently across your projects to avoid confusion.
 - **Documentation** : Add a note in your project’s documentation explaining why and where you use .gitkeep.
 - **Cleanliness** : Periodically check if the directories still need to be empty or if files have been added, making .gitkeep unnecessary.
+
+
+
+# Branches in git
+Git branches are a core feature in version control, allowing developers to work on different parts of a project simultaneously without interfering with the main codebase.
+
+#### What is a Git Branch?
+A Git branch is a separate line of development. Think of it as a new copy of your project where you can make changes without affecting the main codebase.
+
+#### Why Use Branches?
+- **Parallel Development**v : Work on multiple features or bug fixes at the same time.
+- **Isolation** : Keep changes separate until they’re ready to be merged.
+- **Collaboration** : Multiple developers can work on different branches without conflicts.
+
+
+![git branches](https://app.eraser.io/workspace/naKDsmwtCmZiDgeMuuFA/preview?elements=qTNZMYYuBsW8HPCASTIR4Q&type=embed)
+
+####  **Creating a new branch**
+To create a new branch, you can use the following command:
+
+
+> `git branch` - This command lists all the branches in the current repository.
+
+```cmd
+  git branch
+```
+
+> `git branch BRANCH_NAME` - This command creates a new branch called `BRANCH_NAME`.
+
+```cmd
+  git branch BRANCH_NAME
+```
+> `git switch BRANCH_NAME` - This command switches to the `BRANCH_NAME` branch.
+
+```cmd
+  git switch BRANCH_NAME
+```
+
+> `git switch -c another_branch` - This command creates a new branch called dark-mode. the `-c` flag is used to create a new branch.
+
+```cmd
+  git switch -c another_branch
+```
+
+> `git checkout BRANCH_NAME` - This command switches to the `BRANCH_NAME` branch.
+
+```cmd
+  git checkout BRANCH_NAME
+```
