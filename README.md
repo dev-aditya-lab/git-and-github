@@ -319,7 +319,7 @@ To create a new branch, you can use the following command:
   git switch BRANCH_NAME
 ```
 
-> `git switch -c another_branch` - This command creates a new branch called dark-mode. the `-c` flag is used to create a new branch.
+> `git switch -c another_branch` - This command creates a new branch. the `-c` flag is used to create a new branch.
 
 ```cmd
   git switch -c another_branch
