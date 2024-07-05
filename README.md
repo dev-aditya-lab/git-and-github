@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://socialify.git.ci/yashksaini-coder/Git-Github-Docs/image?forks=1&issues=1&language=1&name=1&pulls=1&stargazers=1&theme=Auto" alt="Git-Github-Docs" width="640" height="320" />
+  <img src="https://socialify.git.ci/yashksaini-coder/Git-Github-Docs/image?name=1&theme=Auto" alt="Git-Github-Docs" width="640" height="320" />
 </div>
 
 # GIT and GitHub Documentation 📘
