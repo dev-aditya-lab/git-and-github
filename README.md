@@ -219,6 +219,12 @@ To create a new branch, you can use the following command:
   git checkout BRANCH_NAME
 ```
 
+> `git checkout -b BRANCH_NAME` - This command create and switches to the `BRANCH_NAME` branch.
+
+```cmd
+  git checkout -b BRANCH_NAME
+```
+
 # Rename Branches in Git
 
 Renaming branches in Git can be an essential part of maintaining a clean and organized repository. Here's a simple guide to help you through the process.
